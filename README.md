@@ -12,9 +12,9 @@
 2. ダウンロードしたファイルを展開し、wp-cli.setup.sh を抽出
 3. wp-cli.setup.sh をレンタルサーバのホームディレクトリにアップロード（SFTP・FTPS推奨）
 4. サーバのホームディレクトリに SSH でログイン
-5. **chmod +x wp-cli.setup.sh** で wp-cli.setup.sh に実行権を付与
-6. **./wp-cli.setup.sh** を実行
-7. メッセージに沿って **source ~/.cshrc** または **source ~/.bash_profile** を実行
+5. ``chmod +x wp-cli.setup.sh`` で wp-cli.setup.sh に実行権を付与
+6. ``./wp-cli.setup.sh`` を実行
+7. メッセージに沿って ``source ~/.cshrc`` または ``source ~/.bash_profile`` を実行
 
 ## 留意事項
 
