@@ -4,8 +4,8 @@
 #
 # Download WP-CLI.
 #
-mkdir -p ~/usr/bin
-cd ~/usr/bin
+mkdir -p ~/usr/local/bin
+cd ~/usr/local/bin
 wget -nc --no-check-certificate https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 chmod +x wp-cli.phar
 
@@ -26,7 +26,7 @@ if expr $SHELL : ".*bash" > /dev/null; then
 
 	cat >> .bash_profile <<-EOT
 	
-	alias wp='php ~/usr/bin/wp-cli.phar'
+	alias wp='php ~/usr/local/bin/wp-cli.phar'
 	source ~/wp-completion.bash
 	
 	EOT
@@ -41,7 +41,7 @@ elif expr $SHELL : ".*csh" > /dev/null; then
 
 	cat >> .cshrc <<-EOT
 	
-	alias wp php ~/usr/bin/wp-cli.phar
+	alias wp php ~/usr/local/bin/wp-cli.phar
 	
 	EOT
 	message="source ~/.cshrc"
