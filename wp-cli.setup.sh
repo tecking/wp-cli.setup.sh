@@ -50,7 +50,7 @@ elif expr $SHELL : ".*csh" > /dev/null; then
 else
 	cat <<-EOT
 	*
-	* Unfortunately, installation is failed.
+	* Unfortunately, installation has failed.
 	*
 	EOT
 	exit
@@ -62,7 +62,7 @@ fi
 #
 cat <<EOT
 *
-* Installation is completed successfully.
+* Installation has completed successfully.
 * Please enter the following command. Have fun :)
 *
 * $message
