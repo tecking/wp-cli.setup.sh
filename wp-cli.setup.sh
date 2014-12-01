@@ -26,7 +26,7 @@ if expr $SHELL : ".*bash" > /dev/null; then
 		chmod +w .bash_profile
 	fi
 
-	cat >> .bash_profile <<-EOT
+	cat >> .bash_profile <<-"EOT"
 	
 	PATH=$PATH:~/usr/local/bin
 	source ~/wp-completion.bash
@@ -41,7 +41,7 @@ elif expr $SHELL : ".*csh" > /dev/null; then
 		chmod +w ~/.cshrc
 	fi
 
-	cat >> .cshrc <<-EOT
+	cat >> .cshrc <<-"EOT"
 	
 	set path = ($path ~/usr/local/bin)
 	
