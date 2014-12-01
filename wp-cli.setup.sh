@@ -8,8 +8,8 @@ if [ ! -d "~/usr/local/bin" ]; then
 	mkdir -p ~/usr/local/bin
 fi
 cd ~/usr/local/bin
-wget -nc --no-check-certificate https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-chmod +x wp-cli.phar
+wget -nc --no-check-certificate https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar -O wp
+chmod +x wp
 
 
 #
@@ -28,7 +28,7 @@ if expr $SHELL : ".*bash" > /dev/null; then
 
 	cat >> .bash_profile <<-EOT
 	
-	alias wp='php ~/usr/local/bin/wp-cli.phar'
+	PATH=$PATH:~/usr/local/bin
 	source ~/wp-completion.bash
 	
 	EOT
@@ -43,7 +43,7 @@ elif expr $SHELL : ".*csh" > /dev/null; then
 
 	cat >> .cshrc <<-EOT
 	
-	alias wp php ~/usr/local/bin/wp-cli.phar
+	set path = ($path ~/usr/local/bin)
 	
 	EOT
 	message="source .cshrc"
