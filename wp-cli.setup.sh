@@ -13,7 +13,7 @@ chmod +x wp
 
 
 #
-# Configure alias.
+# Set path.
 #
 cd ~
 
