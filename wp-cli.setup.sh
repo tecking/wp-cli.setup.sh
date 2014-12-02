@@ -7,9 +7,8 @@
 if [ ! -d "~/usr/local/bin" ]; then
 	mkdir -p ~/usr/local/bin
 fi
-cd ~/usr/local/bin
-wget -nc --no-check-certificate https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar -O wp
-chmod +x wp
+wget -nc --no-check-certificate https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar -O ~/usr/local/bin/wp
+chmod +x ~/usr/local/bin/wp
 
 
 #
@@ -22,31 +21,31 @@ if expr $SHELL : ".*bash" > /dev/null; then
 
 	wget -nc --no-check-certificate https://github.com/wp-cli/wp-cli/raw/master/utils/wp-completion.bash
 
-	if [ -f ".bash_profile" ]; then
-		chmod +w .bash_profile
+	if [ -f "~/.bash_profile" ]; then
+		chmod +w ~/.bash_profile
 	fi
 
-	cat >> .bash_profile <<-"EOT"
+	cat >> ~/.bash_profile <<-"EOT"
 	
 	PATH=$PATH:~/usr/local/bin
 	source ~/wp-completion.bash
 	
 	EOT
-	message="source .bash_profile"
+	message="source ~/.bash_profile"
 
 # csh
 elif expr $SHELL : ".*csh" > /dev/null; then
 
-	if [ -f ".cshrc" ]; then
+	if [ -f "~/.cshrc" ]; then
 		chmod +w ~/.cshrc
 	fi
 
-	cat >> .cshrc <<-"EOT"
+	cat >> ~/.cshrc <<-"EOT"
 	
 	set path = ($path ~/usr/local/bin)
 	
 	EOT
-	message="source .cshrc"
+	message="source ~/.cshrc"
 
 # Other shells
 else
