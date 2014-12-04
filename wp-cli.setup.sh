@@ -2,6 +2,18 @@
 
 
 #
+# Check existence for wget command.
+#
+command -v wget >/dev/null 2>&1 || { cat >&2 <<-EOT 
+	*
+	* Unfortunately, installation has failed.
+	*
+	EOT
+	exit 1
+}
+
+
+#
 # Download WP-CLI.
 #
 if [ ! -d "~/usr/local/bin" ]; then
@@ -50,10 +62,10 @@ elif expr $SHELL : ".*csh" > /dev/null; then
 else
 	cat <<-EOT
 	*
-	* Unfortunately, installation has failed.
+	* Unfortunately, Installation has failed.
 	*
 	EOT
-	exit
+	exit 1
 fi
 
 
@@ -68,4 +80,4 @@ cat <<EOT
 * $message
 *
 EOT
-exit
+exit 0
