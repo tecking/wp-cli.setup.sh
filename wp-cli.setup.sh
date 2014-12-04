@@ -14,12 +14,11 @@ chmod +x ~/usr/local/bin/wp
 #
 # Set path.
 #
-cd ~
 
 # bash 
 if expr $SHELL : ".*bash" > /dev/null; then
 
-	wget -nc --no-check-certificate https://github.com/wp-cli/wp-cli/raw/master/utils/wp-completion.bash
+	wget -nc --no-check-certificate https://github.com/wp-cli/wp-cli/raw/master/utils/wp-completion.bash -O ~/wp-completion.bash
 
 	if [ -f "~/.bash_profile" ]; then
 		chmod +w ~/.bash_profile
