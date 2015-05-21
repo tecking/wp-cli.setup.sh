@@ -1,5 +1,14 @@
 #!/bin/sh
 
+#
+# wp-cli.setup.sh
+#
+# Copyright 2014 -, tecking
+# Version 0.3.0
+#
+# Licensed under the MIT License.
+#
+
 
 #
 # Check existence for wget command.
