@@ -5,7 +5,7 @@
 "wp-cli.setup.sh" is a shell script to install [WP-CLI](http://wp-cli.org/) into common hosting servers.
 
 * Related website  
-[WP-CLI Advent Calendar 2014](http://www.adventar.org/calendars/505) (sorry, only Japanese)
+[WP-CLI Advent Calendar 2014](http://www.adventar.org/calendars/505)
 
 ## Requires
 
@@ -31,7 +31,7 @@ A hosting server that SSH access is allowed.
 * Once WP-CLI is installed, you can delete the script
 * The script is usable under the following environment, maybe
  * "sh" is available (you can check with ``which sh`` command)
- * "wget" is available (the script checkes wget is usable or not)
+ * "wget" is available (the script checks wget is usable or not)
  * Login shell is "bash" or "csh"
 
 ## Changelog
