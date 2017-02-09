@@ -25,7 +25,8 @@ A hosting server that SSH access is allowed.
 * Please use At Your Own Risk
 * Tested environment (hosting servers)
  * [SAKURA Rental Server](http://www.sakura.ne.jp/) (Japan)
- * [Heteml](http://heteml.jp) (Japan)
+ * [Heteml](https://heteml.jp/) (Japan)
+ * [Lolipop](https://lolipop.jp/) (Japan)
 * WP-CLI (wp-cli.phar) is downloaded in ~/usr/local/bin directory
 * Tab completions file for bash (wp-completion.bash) is downloaded in ~/ directory
 * Once WP-CLI is installed, you can delete the script
