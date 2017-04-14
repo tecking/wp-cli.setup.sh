@@ -27,6 +27,7 @@ A hosting server that SSH access is allowed.
  * [SAKURA Rental Server](http://www.sakura.ne.jp/) (Japan)
  * [Heteml](https://heteml.jp/) (Japan)
  * [Lolipop](https://lolipop.jp/) (Japan)
+ * [X SERVER](https://www.xserver.ne.jp/) (Japan)
 * WP-CLI (wp-cli.phar) is downloaded in ~/usr/local/bin directory
 * Tab completions file for bash (wp-completion.bash) is downloaded in ~/ directory
 * Once WP-CLI is installed, you can delete the script
