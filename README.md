@@ -24,24 +24,24 @@ A hosting server that SSH access is allowed.
 
 * Please use At Your Own Risk
 * Tested environment (hosting servers)
- * [SAKURA Rental Server](http://www.sakura.ne.jp/) (Japan)
- * [Heteml](https://heteml.jp/) (Japan)
- * [Lolipop](https://lolipop.jp/) (Japan)
- * [X SERVER](https://www.xserver.ne.jp/) (Japan)
+  * [SAKURA Rental Server](http://www.sakura.ne.jp/) (Japan)
+  * [Heteml](https://heteml.jp/) (Japan)
+  * [Lolipop](https://lolipop.jp/) (Japan)
+  * [X SERVER](https://www.xserver.ne.jp/) (Japan)
 * WP-CLI (wp-cli.phar) is downloaded in ~/usr/local/bin directory
 * Tab completions file for bash (wp-completion.bash) is downloaded in ~/ directory
 * Once WP-CLI is installed, you can delete the script
 * The script is usable under the following environment, maybe
- * "sh" is available (you can check with ``which sh`` command)
- * "wget" is available (the script checks wget is usable or not)
- * Login shell is "bash" or "csh"
+  * "sh" is available (you can check with ``which sh`` command)
+  * "wget" is available (the script checks wget is usable or not)
+  * Login shell is "bash" or "csh"
 
 ## Changelog
 
 * 0.3.0 (2014-12-05)
- * Check existence for wget command
+  * Check existence for wget command
 * 0.2 (2014-11-30)
- * Opening to the public
+  * Opening to the public
 
 ## License
 
