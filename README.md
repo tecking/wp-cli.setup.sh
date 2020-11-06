@@ -14,20 +14,21 @@ A hosting server that SSH access is allowed.
 ## Installation and usage
 
 1. Connect to hosting server via SSH
-2. Execute ``wget --no-check-certificate https://raw.githubusercontent.com/tecking/wp-cli.setup.sh/master/wp-cli.setup.sh``  
+2. Run ``wget --no-check-certificate https://raw.githubusercontent.com/tecking/wp-cli.setup.sh/master/wp-cli.setup.sh``  
 (you can download the script)
-3. Execute ``chmod +x wp-cli.setup.sh``
-4. Execute ``./wp-cli.setup.sh``
-5. Following the message, execute ``source ~/.cshrc`` or ``source ~/.bash_profile``
+3. Run ``chmod +x wp-cli.setup.sh``
+4. Run ``./wp-cli.setup.sh``
+5. Following the message, run ``source ~/.cshrc`` or ``source ~/.bash_profile``
 
 ## Notice
 
 * Please use At Your Own Risk
 * Tested environment (hosting servers)
-  * [SAKURA Rental Server](http://www.sakura.ne.jp/) (Japan)
+  * [SAKURA Rental Server](https://www.sakura.ne.jp/) (Japan)
   * [Heteml](https://heteml.jp/) (Japan)
   * [Lolipop](https://lolipop.jp/) (Japan)
   * [X SERVER](https://www.xserver.ne.jp/) (Japan)
+  * [ConoHa WING](https://www.conoha.jp/wing/) (Japan)
 * WP-CLI (wp-cli.phar) is downloaded in ~/usr/local/bin directory
 * Tab completions file for bash (wp-completion.bash) is downloaded in ~/ directory
 * Once WP-CLI is installed, you can delete the script
